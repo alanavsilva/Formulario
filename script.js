@@ -8,7 +8,6 @@ function validacao() {
     let motivo = document.getElementById("motivo").value;
     let tipo = document.querySelector('input[name="tipo"]:checked');
     let quintal = document.querySelector('input[name="quintal"]:checked');
-    let antes = document.querySelector('input[name="antes"]:checked');
 
     if (nome.length < 3) {
         alert("Nome deve ter no mínimo 3 caracteres.");
@@ -30,11 +29,19 @@ function validacao() {
         alert("As horas por dia sozinhas do seu animal devem ser informadas apenas com números");
     }
 
+    if (horas_sozinho >= 8) {
+        let porque = prompt("Atenção!! Não é recomendado deixar seu animalzinho tanto tempo sozinho, justifique o porquê de tanto tempo:");
+    }
+
     if (motivo.length < 10) {
         alert("O motivo de adoção deve ter no mínimo 10 caracteres.");
     }
 
-    if (tipo && tipo.value === "casa") {
-        let resposta1 = prompt("O quintal é seguro? (sim ou não?)");
+    if ((tipo && tipo.value === "casa") && (quintal && quintal.value === "sim")) {
+        let resposta1 = prompt("O quintal é seguro?");
+    }
+
+    if (tipo && tipo.value === "apartamento") {
+        let resposta2 = prompt("O apartamento permite animais?");
     }
 }
