@@ -8,6 +8,7 @@ function validacao() {
     let motivo = document.getElementById("motivo").value;
     let tipo = document.querySelector('input[name="tipo"]:checked');
     let quintal = document.querySelector('input[name="quintal"]:checked');
+    let antes = document.querySelector('input[name="antes"]:checked');
 
     if (nome.length < 3) {
         alert("Nome deve ter no mínimo 3 caracteres.");
@@ -26,7 +27,7 @@ function validacao() {
     }
 
     if (isNaN(horas_sozinho)) {
-        alert("As horas por dia sozinhas do seu animal devem ser informadas apenas com números");
+        alert("As horas por dia sozinhas do seu animal devem ser informadas apenas com números.");
     }
 
     if (horas_sozinho >= 8) {
@@ -43,5 +44,9 @@ function validacao() {
 
     if (tipo && tipo.value === "apartamento") {
         let resposta2 = prompt("O apartamento permite animais?");
+    }
+
+    if (antes && antes.value === "nao") {
+        alert("Já que você não teve nenhum animalzinho antes, pode haver um acompanhamento da ONG.")
     }
 }
