@@ -38,6 +38,10 @@ function validacao() {
         alert("O motivo de adoção deve ter no mínimo 10 caracteres.");
     }
 
+     if ((motivo === "porque sim")||(motivo === "porque quero")||(motivo === "porque eu quero")||(motivo === "Porque sim")||(motivo === "Porque quero")||(motivo === "Porque eu quero")) {
+        alert("Resposta do motivo de adoção muito genérica, não será aceita.")
+    }
+
     if ((tipo && tipo.value === "casa") && (quintal && quintal.value === "sim")) {
         let resposta1 = prompt("O quintal é seguro?");
     }
@@ -49,4 +53,5 @@ function validacao() {
     if (antes && antes.value === "nao") {
         alert("Já que você não teve nenhum animalzinho antes, pode haver um acompanhamento da ONG.")
     }
+
 }
