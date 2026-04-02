@@ -39,3 +39,7 @@ button{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(136, 77, 77);
 }
+
+.escolha_casa{
+    display:none;
+}

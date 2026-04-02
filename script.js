@@ -6,6 +6,9 @@ function validacao() {
     let idade = document.getElementById("idade").value;
     let horas_sozinho = document.getElementById("horas_sozinho").value;
     let motivo = document.getElementById("motivo").value;
+    let tipo = document.querySelector('input[name="tipo"]:checked');
+    let quintal = document.querySelector('input[name="quintal"]:checked');
+    let antes = document.querySelector('input[name="antes"]:checked');
 
     if (nome.length < 3) {
         alert("Nome deve ter no mínimo 3 caracteres.");
@@ -23,11 +26,15 @@ function validacao() {
         alert("Envio bloqueado! Você deve ser maior de idade para adotar.");
     }
 
-    if (horas_sozinho != Number) {
+    if (isNaN(horas_sozinho)) {
         alert("As horas por dia sozinhas do seu animal devem ser informadas apenas com números");
     }
 
     if (motivo.length < 10) {
         alert("O motivo de adoção deve ter no mínimo 10 caracteres.");
+    }
+
+    if (tipo && tipo.value === "casa") {
+        let resposta1 = prompt("O quintal é seguro? (sim ou não?)");
     }
 }
