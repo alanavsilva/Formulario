@@ -6,7 +6,6 @@ function validacao() {
     let idade = document.getElementById("idade").value;
     let horas_sozinho = document.getElementById("horas_sozinho").value;
     let motivo = document.getElementById("motivo").value;
-    let apartamento = document.getElementById("apartamento").value;
 
     if (nome.length < 3) {
         alert("Nome deve ter no mínimo 3 caracteres.");
@@ -31,8 +30,4 @@ function validacao() {
     if (motivo.length < 10) {
         alert("O motivo de adoção deve ter no mínimo 10 caracteres.");
     }
-
-    if (motivo.length < 10) {
-        alert("O motivo de adoção deve ter no mínimo 10 caracteres.");
-    }
-    }
+}
