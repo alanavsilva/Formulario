@@ -10,6 +10,9 @@ header {
 body {
     background-image: url(assets/grande-grupo-de-caes-olhando-para-a-camera-isolada-em-branco_191971-28626.avif);
     background-size: cover;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(136, 77, 77);
 }
 
 h2 {
@@ -26,6 +29,9 @@ form {
 
 div{
     margin: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(136, 77, 77);
 }
 
 button{

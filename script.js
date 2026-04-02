@@ -8,6 +8,8 @@ function validacao() {
     let cpf = document.getElementById("cpf").value;
     let idade = document.getElementById("idade").value;
 
+if(nome){
+
     if (nome.length < 3) {
         alert("Nome deve ter no mínimo 3 caracteres.");
     }
@@ -20,11 +22,8 @@ function validacao() {
         alert("Telefone deve ter no mínimo 8 dígitos.");
     }
 
-    if (cpf.length <= 0) {
-        alert("Cpf obrigatório.");
-    }
-
     if (idade <= 18) {
         alert("Envio bloqueado! Você deve ser maior de idade para adotar.");
     }
+}
 }
