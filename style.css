@@ -10,9 +10,11 @@ header {
 body {
     background-image: url(assets/grande-grupo-de-caes-olhando-para-a-camera-isolada-em-branco_191971-28626.avif);
     background-size: cover;
+    background-position: center;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(136, 77, 77);
+    justify-content: center;
 }
 
 h2 {
@@ -27,19 +29,28 @@ form {
     color: rgb(136, 77, 77);
 }
 
-div{
+div {
     margin: 40px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(136, 77, 77);
 }
 
-button{
+button {
     background-color: blanchedalmond;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(136, 77, 77);
 }
 
-.escolha_casa{
-    display:none;
+.escolha_casa {
+    display: none;
+}
+
+p {
+    background-color: blanchedalmond;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(136, 77, 77);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
 }
