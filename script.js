@@ -66,9 +66,11 @@ function validacao() {
     }
 
     if (tipo && tipo.value === "apartamento" && quintal && quintal.value === "sim") {
-    alert("Erro: Quem mora em apartamento não pode ter quintal.");
+    alert("Ocorreu um erro, quem mora em apartamento não pode ter quintal.");
 }
 
-
+if (tipo && tipo.value === "casa" && quintal && quintal.value === "nao") {
+    alert("Aviso: por não possuir quintal, o uso de espaço externo pode ser limitado.");
+}
 
 }
